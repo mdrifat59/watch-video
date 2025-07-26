@@ -1,9 +1,16 @@
 import { Component } from 'react'
+import Search from './search.component'
+import { LogoIcon } from './svg/logo.svg'
 
- class Navbar extends Component {
+class Navbar extends Component {
   render() {
     return (
-      <div>navbar.component</div>
+      <nav className="grid grid-cols-3 items-center justify-between p-4  text-white">
+        <div className="py-[18px] cursor-pointer">
+          <LogoIcon />
+        </div>
+        <Search />
+      </nav>
     )
   }
 }

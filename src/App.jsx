@@ -1,14 +1,12 @@
 import { useState } from 'react' 
-import NavBar from './component/navbar.component'
-import Search from './component/search.component'
+import NavBar from './component/navbar.component' 
  
 
 function App() { 
 
   return (
     <>
-      <NavBar/>
-      <Search/>
+      <NavBar/> 
     </>
   )
 }
