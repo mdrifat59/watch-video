@@ -1,13 +1,15 @@
 import { Component } from 'react'
-import profileImg from '/images/profileImg.jpg'
+
 import { BallIcon, DislikeIcon, LikeIcon, ShareIcon, ThreeDotIcon } from './svg/details.svg'
+import ProfileImg from '../profileImg.component'
 
 class VideoDetails extends Component {
     render() {
         return (
-            <div className='flex items-center justify-between gap-3'>
+            <div className='flex items-center justify-between gap-3 mt-5'>
                 <div className='flex items-center gap-3'>
-                    <img src={profileImg} className='w-[40px] h-[40px] rounded-full' alt="" />
+                    {/* <img src={profileImg} className='w-[40px] h-[40px] rounded-full' alt="" /> */}
+                    <ProfileImg/>
                     <div>
                         <h3 className='text-lg'>Joe HaTTab</h3>
                         <span className='text-sm'>17.8 M</span>

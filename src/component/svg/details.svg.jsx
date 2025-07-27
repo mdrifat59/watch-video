@@ -116,3 +116,27 @@ export const ThreeDotIcon = ({ size }) => {
 
     )
 }
+
+// short icon
+
+export const ShortIcon = ({ size }) => {
+    return (
+        <svg
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+            xmlns="http://www.w3.org/2000/svg"
+            enableBackground="new 0 0 24 24"
+            height={size}
+            viewBox="0 0 24 24"
+            width={size}
+            focusable="false"
+            aria-hidden="true"
+            style={{
+                pointerEvents: "none",
+                display: "inherit",
+            }}
+        >
+            <path fill="white" d="M21 6H3V5h18v1zm-6 5H3v1h12v-1zm-6 6H3v1h6v-1z" />
+        </svg>
+
+    )
+}

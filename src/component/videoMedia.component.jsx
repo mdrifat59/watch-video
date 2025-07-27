@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import VideoDetails from './videoDetails.component'
+import CommentSection from './commentSection.component'
 
 class VideoMedia extends Component {
     render() {
@@ -14,6 +15,7 @@ class VideoMedia extends Component {
                 ></iframe>
                 <p className='text-[32px]'>World’s Most Expensive Food - Here’s How It’s Made (Caviar in Vietnam)</p>
                 <VideoDetails/>
+                <CommentSection/>
             </div>
         )
     }
