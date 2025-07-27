@@ -8,7 +8,7 @@ class VideoMedia extends Component {
                     className="w-full h-full"
                     src="https://www.youtube.com/embed/38OVnQZosMQ"
                     title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allow="accelerometer; autoplay;controles; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowFullScreen
                 ></iframe>
                 <p className='text-[32px]'>World’s Most Expensive Food - Here’s How It’s Made (Caviar in Vietnam)</p>
@@ -18,3 +18,4 @@ class VideoMedia extends Component {
 }
 
 export default VideoMedia
+
