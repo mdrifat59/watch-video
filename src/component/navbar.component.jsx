@@ -22,7 +22,7 @@ class Navbar extends Component {
   render() {
     const { showSearch } = this.state
     return (
-      <nav className={`flex lg:grid  lg:grid-cols-3  items-center justify-between p-4 `}>
+      <nav className={`max-w-[1300px] flex lg:grid  lg:grid-cols-3  items-center justify-between p-4 `}>
         <div className={`py-[18px] cursor-pointer ${showSearch ? "hidden" : "block"}`}>
           <LogoIcon />
         </div>
@@ -40,7 +40,7 @@ class Navbar extends Component {
           <SearchIcon size={25} />
         </div>
 
-        <div className="ml-auto flex items-center gap-5"> 
+        <div className="ml-auto lg:flex items-center gap-5 hidden lg:block  ">
           <BallIcon size={25} />
           <ProfileImg />
         </div>
