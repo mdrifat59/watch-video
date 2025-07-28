@@ -40,7 +40,7 @@ class Navbar extends Component {
           <SearchIcon size={25} />
         </div>
 
-        <div className="ml-auto lg:flex items-center gap-5 hidden lg:block  ">
+        <div className="ml-auto lg:flex items-center gap-5 hidden">
           <BallIcon size={25} />
           <ProfileImg />
         </div>
