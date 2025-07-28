@@ -3,6 +3,8 @@ import Search from './search.component'
 import { LogoIcon } from './svg/logo.svg'
 import { SearchIcon } from './svg/search.svg'
 import { Arrowicon } from './svg/arrow.svg'
+import { BallIcon } from './svg/details.svg'
+import ProfileImg from '../profileImg.component'
 
 class Navbar extends Component {
   constructor() {
@@ -36,6 +38,11 @@ class Navbar extends Component {
         <div className={`ml-auto hover:cursor-pointer p-1 rounded-full hover:bg-gray-500 md:hidden ${showSearch ? "hidden" : "block"}`}
           onClick={this.handleSearchToggle}>
           <SearchIcon size={25} />
+        </div>
+
+        <div className="ml-auto flex items-center gap-5"> 
+          <BallIcon size={25} />
+          <ProfileImg />
         </div>
       </nav>
     )
