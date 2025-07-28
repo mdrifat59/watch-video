@@ -6,7 +6,7 @@ import CommentSection from './commentSection.component'
   class Content extends Component {
   render() {
     return (
-      <div className='xl:grid grid-cols-[60%_40%] gap-5 p-5 max-w-[1300px]'>
+      <div className='max-w-[1300px] mx-auto xl:grid grid-cols-[60%_40%] gap-5 p-5 '>
         <div className=''> 
         <VideoMedia />
         </div>
