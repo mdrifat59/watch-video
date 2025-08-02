@@ -1,8 +1,7 @@
 import { Component } from 'react'
-import ProfileImg from '../profileImg.component'
-import Comments from './comments.component'
+import ProfileImg from './profile.img.component'
 
-class CommentType extends Component {
+class Comment extends Component {
     render() {
         return (
             <>
@@ -14,15 +13,9 @@ class CommentType extends Component {
                     <button className='hover:bg-[#272727] text-white px-5 py-2 rounded-full mt-3 cursor-pointer'>Cencel</button>
                     <button className='bg-[#272727] text-white px-5 py-2 rounded-full mt-3 opacity-50 cursor-not-allowed'>Comment</button>
                 </div>
-                <div className="flex flex-col gap-5">
-                    <Comments />
-                    <Comments />
-                    <Comments />
-                    <Comments /> 
-                </div>
             </>
         )
     }
 }
 
-export default CommentType
+export default Comment

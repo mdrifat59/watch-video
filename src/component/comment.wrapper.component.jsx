@@ -1,8 +1,9 @@
-import React, { Component } from 'react'
+import { Component } from 'react'
 import { ShortIcon } from './svg/details.svg'
-import CommentType from './commentType.component'
+import CommentList from './comment.list.component'
+import Comment from './comment.component'
 
-export class CommentSection extends Component {
+ class CommentWrapper extends Component {
     render() {
         return (
             <>
@@ -13,10 +14,11 @@ export class CommentSection extends Component {
                         <p className='text-sm'>Short by</p>
                     </div>
                 </div>
-                <CommentType />
+                <Comment/>
+                <CommentList />
             </>
         )
     }
 }
 
-export default CommentSection
+export default CommentWrapper

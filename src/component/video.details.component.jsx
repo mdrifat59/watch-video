@@ -1,7 +1,7 @@
 import { Component } from 'react' 
-import { BallIcon, DislikeIcon, LikeIcon, ShareIcon, ThreeDotIcon } from './svg/details.svg'
-import ProfileImg from '../profileImg.component'
-import VideoDetailsResponsive from './videoDetailsResponsive.component'
+import { BallIcon, DislikeIcon, LikeIcon, ShareIcon, ThreeDotIcon } from './svg/details.svg' 
+import VideoDetailsResponsive from './video.details.responsive.component'
+import ProfileImg from './profile.img.component'
 
 class VideoDetails extends Component {
     render() {

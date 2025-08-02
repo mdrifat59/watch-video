@@ -1,5 +1,5 @@
 import { Component } from 'react'
-import ProfileImg from '../profileImg.component'
+import ProfileImg from './profile.img.component'
 import { BallIcon, DislikeIcon, LikeIcon, ShareIcon, ThreeDotIcon } from './svg/details.svg'
 
 class VideoDetailsResponsive extends Component {

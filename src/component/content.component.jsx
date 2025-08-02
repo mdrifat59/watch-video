@@ -1,20 +1,20 @@
 import  { Component } from 'react'
-import VideoMedia from './videoMedia.component' 
-import VideoList from './videoList.component'
-import CommentSection from './commentSection.component'
+import VideoWrapper from './video.wapper.component' 
+import VideoList from './video.list.component'
+import CommentWrapper from './comment.wrapper.component'
 
   class Content extends Component {
   render() {
     return (
       <div className='max-w-[1300px] mx-auto xl:grid grid-cols-[60%_40%] gap-5 p-5 '>
         <div className=''> 
-        <VideoMedia />
+        <VideoWrapper />
         </div>
          <div>
             <VideoList/>
          </div>
          <div className="xl:hidden">
-          <CommentSection/>
+          <CommentWrapper/>
          </div>
       </div>
     )

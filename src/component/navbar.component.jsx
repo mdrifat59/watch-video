@@ -4,7 +4,7 @@ import { LogoIcon } from './svg/logo.svg'
 import { SearchIcon } from './svg/search.svg'
 import { Arrowicon } from './svg/arrow.svg'
 import { BallIcon } from './svg/details.svg'
-import ProfileImg from '../profileImg.component'
+import ProfileImg from './profile.img.component'
 
 class Navbar extends Component {
   constructor() {
