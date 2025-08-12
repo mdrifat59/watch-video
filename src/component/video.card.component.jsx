@@ -1,17 +1,14 @@
 import { Component } from 'react'
-import cardImg from '/images/cardimg.jpg'
 
 class VideoCard extends Component {
     render() {
-        const { videoList } = this.props
+        const { videoList, setVideoId } = this.props
 
         return (
             <div>
                 {videoList.map((item, index) => {
-
-
                     return (
-                        <div key={index} className='flex flex-col xl:flex-row gap-3 mt-5'>
+                        <div onClick={() => setVideoId(item.id.videoId)} key={index} className='flex flex-col xl:flex-row gap-3 mt-5'>
                             <img
                                 src={item.snippet.thumbnails.default.url}
                                 alt=""

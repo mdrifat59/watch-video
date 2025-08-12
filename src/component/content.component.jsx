@@ -5,14 +5,15 @@ import CommentWrapper from './comment.wrapper.component'
 
 class Content extends Component {
   render() {
-    const { videoList } = this.props
+    const { videoList, setVideoId, videoId } = this.props
     return (
       <div className='max-w-[1300px] mx-auto xl:grid grid-cols-[60%_40%] gap-5 p-5 '>
         <div className=''>
-          <VideoWrapper />
+          <VideoWrapper videoId={videoId} />
         </div>
         <div>
-          <VideoList videoList={videoList} />
+          <VideoList videoList={videoList} setVideoId={setVideoId}
+          />
         </div>
         <div className="xl:hidden">
           <CommentWrapper />
