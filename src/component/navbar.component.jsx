@@ -21,6 +21,7 @@ class Navbar extends Component {
 
   render() {
     const { showSearch } = this.state
+    const { handleSearch, handleChange, searchText } = this.props
     return (
       <nav className={`max-w-[1300px] mx-auto flex lg:grid  lg:grid-cols-3  items-center justify-between p-4 `}>
         <div className={`py-[18px] cursor-pointer ${showSearch ? "hidden" : "block"}`}>
@@ -32,7 +33,7 @@ class Navbar extends Component {
         </div>
 
         <div className={`${showSearch ? 'block' : 'xs:hidden'}  md:block`}>
-          <Search />
+          <Search handleSearch={handleSearch} handleChange={handleChange} searchText={searchText} />
         </div>
 
         <div className={`ml-auto hover:cursor-pointer p-1 rounded-full hover:bg-gray-500 md:hidden ${showSearch ? "hidden" : "block"}`}
