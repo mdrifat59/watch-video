@@ -1,6 +1,6 @@
 import { Component } from 'react'
-import Content from './component/content.component'
-import Navbar from './component/Navbar.component'
+import Content from './component/content.component' 
+import Navbar from './component/navbar.component'
 import axios from 'axios'
 
 class App extends Component {
