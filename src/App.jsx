@@ -2,6 +2,7 @@ import { Component } from 'react'
 import Content from './component/content.component' 
 import Navbar from './component/navbar.component'
 import axios from 'axios'
+import Home from './component/home.component'
 
 class App extends Component {
   state = {
@@ -30,7 +31,8 @@ class App extends Component {
     return (
       <>
         <Navbar handleSearch={this.handleSearch} handleChange={this.handleChange} searchText={this.state.searchText} />
-        <Content videoList={this.state.videoList} videoId={this.state.videoId} setVideoId={(id) => this.setState({ videoId: id })} />
+        {/* <Content videoList={this.state.videoList} videoId={this.state.videoId} setVideoId={(id) => this.setState({ videoId: id })} /> */}
+        <Home />
       </>
     )
   }
