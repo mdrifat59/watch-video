@@ -1,12 +1,12 @@
 import { Component } from 'react'
-import Content from './component/content.component' 
+import Content from './component/content.component'
 import Navbar from './component/navbar.component'
 import axios from 'axios'
 import Home from './component/home.component'
 
 class App extends Component {
   state = {
-    searchText: "",
+    searchText: "tahsan",
     videoList: [],
     videoId: "",
   }
@@ -27,12 +27,16 @@ class App extends Component {
       ))).catch(err => console.error(err))
 
   }
+  componentDidMount() {
+    this.handleSearch()
+  }
   render() {
     return (
       <>
         <Navbar handleSearch={this.handleSearch} handleChange={this.handleChange} searchText={this.state.searchText} />
         {/* <Content videoList={this.state.videoList} videoId={this.state.videoId} setVideoId={(id) => this.setState({ videoId: id })} /> */}
-        <Home />
+
+        <Home videoList={this.state.videoList} videoId={this.state.videoId} />
       </>
     )
   }
