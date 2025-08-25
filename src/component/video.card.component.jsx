@@ -3,10 +3,9 @@ import { Component } from 'react'
 class VideoCard extends Component {
     render() {
         const { videoList, setVideoId } = this.props
-
         return (
             <div>
-                {videoList.map((item, index) => {
+                {videoList?.map((item, index) => {
                     return (
                         <div onClick={() => setVideoId(item.id.videoId)} key={index} className='flex flex-col xl:flex-row gap-3 mt-5'>
                             <img

@@ -6,6 +6,7 @@ import VideoMedia from './video.media.component'
 class VideoWrapper extends Component {
     render() {
         const { videoId } = this.props
+        if (!videoId) return null
         return (
             <>
                 <div>

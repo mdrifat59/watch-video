@@ -1,10 +1,9 @@
-import { Component } from 'react'
-import cardimg from '/images/cardimg.jpg'
+import { Component } from 'react' 
 import ProfileImg from './profile.img.component'
 
 class Home extends Component {
     render() {
-        const { videoList, videoId } = this.props
+        const { videoList, handleVideo } = this.props
         return (
             <>
                 <div className="max-w-[1300px] mx-auto p-4">
@@ -12,7 +11,7 @@ class Home extends Component {
 
                         {
                             videoList.map((item, index) => (
-                                <div className='flex flex-col gap-3 mt-5' key={index}>
+                                <div onClick={() => handleVideo(item.id.videoId)} className='flex flex-col gap-3 mt-5' key={index}>
                                     <img
                                         src={item.snippet.thumbnails.default.url}
                                         alt=""
@@ -33,11 +32,9 @@ class Home extends Component {
                                         </div>
                                     </div>
                                 </div>
-
-
                             ))
-
                         }
+
                     </div>
                 </div>
 

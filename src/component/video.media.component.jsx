@@ -3,6 +3,7 @@ import { Component } from 'react'
 class VideoMedia extends Component {
     render() {
         const { videoId } = this.props
+
         return (
             <div className='aspect-video w-full max-w-4xl mx-auto'>
                 <iframe
